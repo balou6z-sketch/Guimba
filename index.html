@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon avenir commence</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav style="background-color: #2c3e50; padding: 15px; text-align: center;">
+        <a href="#home" style="color: white; margin: 0 15px; text-decoration: none;">Accueil</a>
+        <a href="#about" style="color: white; margin: 0 15px; text-decoration: none;">A propos</a>
+        <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+    </nav>
+
+    <section id="home" style="text-align: center; padding: 50px; background-color: #f4f4f4;">
+        <h1>Je deviens développeur web</h1>
+        <P>A 18 ans, je construis mon business web</P>
+        <div class="button-container">
+            <button onclick="window.location.href='mailto:balou6z@icloud.com'">Me contacter</button>
+        </div>
+    </section>
+
+    <section id="about" style="padding: 50px; background-color: #ffffff;">
+        <h2>A propos de moi</h2>
+        <p>Je suis motivé, prêt à apprendre et à créer des site qui rapportent.</p>
+        <ul>
+            <li>Gagner 3000$/mois</li>
+            <li>Etre indépendant</li>
+            <li>Créer mon business web</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        
+        <form action="https://formspree.io/f/mojnbvjp" method="post">
+            
+            <input type="text" name="name" placeholder="Votre nom">
+
+            <input type="email" name="email" placeholder="Votre email" required>
+
+            <textarea name="message" placeholder="Votre message" required></textarea>
+
+            <button type="submit">Envoyer</button>
+
+        </form>
+
+        <p id="confirmation" style="display: none; color: green; font-weight: bold;">
+            Message envoyé avec succès !
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+<img src="Fresh-LaDouille-Visu-News.jpg" width="300">
+
+</html>
